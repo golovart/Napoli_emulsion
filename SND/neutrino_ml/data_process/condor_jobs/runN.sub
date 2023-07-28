@@ -1,0 +1,13 @@
+executable            = runN.sh
+output                = output/timeds_$(ProcId).out
+error                 = error/timeds_$(ProcId).err
+log                   = log/timeds_$(ProcId).log
+getenv = False
+notification = Never
+
+should_transfer_files = YES
+
++JobFlavour      ="espresso"
++AccountingGroup = "group_u_SNDLHC.users"
+
+queue arguments from paramlist_neutrinoMC.txt
